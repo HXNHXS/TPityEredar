@@ -1,0 +1,18 @@
+//
+//  DetailViewController.h
+//  TPityEredar
+//
+//  Created by Mac on 15-7-28.
+//  Copyright (c) 2015年 刘 朋飞. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SubjectModel.h"
+#import "SubjectTableViewCell.h"
+@interface DetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *_tableView;
+    NSMutableArray *_dataArray;
+}
+@property(nonatomic,strong)SubjectModel *object;
+@end

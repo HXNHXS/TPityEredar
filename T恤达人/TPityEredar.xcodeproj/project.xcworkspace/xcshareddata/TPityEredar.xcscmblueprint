@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "254c864c-e343-44aa-b1aa-090cdc3dd8f1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "254c864c-e343-44aa-b1aa-090cdc3dd8f1" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "254c864c-e343-44aa-b1aa-090cdc3dd8f1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "44C6A952-8CB5-4FF2-B83C-645E4C62578B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "254c864c-e343-44aa-b1aa-090cdc3dd8f1" : "res%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TPityEredar",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TPityEredar.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/127.0.0.1\/res",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "254c864c-e343-44aa-b1aa-090cdc3dd8f1"
+    }
+  ]
+}

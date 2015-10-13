@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>44C6A952-8CB5-4FF2-B83C-645E4C62578B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TPityEredar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>430D3D8D-7FF9-419F-ABE4-19C49CB1F22A</key>
+		<string>svn://127.0.0.1/res</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TPityEredar.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>430D3D8D-7FF9-419F-ABE4-19C49CB1F22A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>430D3D8D-7FF9-419F-ABE4-19C49CB1F22A</key>
+		<string>svn://127.0.0.1/res</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://127.0.0.1/res/TPityEredar.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>430D3D8D-7FF9-419F-ABE4-19C49CB1F22A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>430D3D8D-7FF9-419F-ABE4-19C49CB1F22A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>res</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,97 @@
+//
+//  NetWorkRequest.m
+//  TPityEredar
+//
+//  Created by Mac on 15-7-28.
+//  Copyright (c) 2015年 刘 朋飞. All rights reserved.
+//
+
+#import "NetWorkRequest.h"
+
+@implementation NetWorkRequest
++(void)getRecommendCompletion:(void(^)(NSDictionary *dic))block
+{
+  
+    AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
+    [request GET:@"http://wear.motoway.net/app/subjects/2/recommend"parameters:(nil)  success:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        
+                if (block)
+        {
+            block(dic[@"content"][0]);
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error)
+    {
+        NSLog(@"---%@",error);
+    }];
+    
+}
+
++(void)getSubjectDataCompletion:(void(^)(NSDictionary *dic))block
+{
+    AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
+    [request GET:@"http://wear.motoway.net/app/subjects/2?data=%7B%22n%22%3A20%2C%22s%22%3A0%7D"parameters:(nil)  success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSDictionary *dic = (NSDictionary *)responseObject;
+         
+         if (block)
+         {
+             block(dic);
+         }
+         
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         NSLog(@"---%@",error);
+     }];
+}
++(void)getDetailSubjectDataWithString:(NSString *)url Completion:(void(^)(NSDictionary *dic))block
+{
+    NSString *str = [NSString stringWithFormat:@"http://wear.motoway.net/app/subject/%@",url];
+    AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
+    [request GET:str parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        if (block)
+        {
+            block(dic);
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error)
+    {
+        NSLog(@"%@",error);
+    }];
+}
++(void)getSubjectDataOneCompletion:(void(^)(NSDictionary *dic))block
+{
+    AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
+    [request GET:@"http://wear.motoway.net/app/subjects/2?data=%7B%22n%22%3A40%2C%22s%22%3A20%7D" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        if (block)
+        {
+            block(dic);
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+}
+
++(void)getSubjectDataTwoCompletion:(void(^)(NSDictionary *dic))block
+{
+    AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
+    [request GET:@"http://wear.motoway.net/app/subjects/2?data=%7B%22n%22%3A60%2C%22s%22%3A40%7D" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSDictionary *dic = (NSDictionary *)responseObject;
+         if (block)
+         {
+             block(dic);
+         }
+         
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+         NSLog(@"%@",error);
+     }];
+}
+@end

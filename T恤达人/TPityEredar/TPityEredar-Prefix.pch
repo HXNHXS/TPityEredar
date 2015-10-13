@@ -1,0 +1,32 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import "NetWorkRequest.h"
+//第三方类SDW
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+//第三方类SVPullToRefresh  用于下拉刷新和上拉刷新
+#import "SVPullToRefresh.h"
+//数据存储工具类
+#import "CommonTools.h"
+//永久性数据存储
+#import <CoreData/CoreData.h>
+//友盟分享
+#import "UMSocial.h"
+
+#import "UIWindow+YzdHUD.h"
+
+#define APP_WINDOW [[[UIApplication sharedApplication] delegate] window]
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
